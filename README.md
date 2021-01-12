@@ -21,6 +21,8 @@ To start the app:
 docker-compose up -d --build
 ```
 5. You'll have to update the database, username, and password settings in the newly created Grafana's (Available on port 3000 by default) datasource settings.
+6. You can edit the `dogstatsd_test.py` file to play around with statsd metrics. You'll have to install `pipenv` and install dependencies via `pipenv install`
+7. Run `make run-dogstatsd` to emit metrics.
 
 To stop the app:
 
